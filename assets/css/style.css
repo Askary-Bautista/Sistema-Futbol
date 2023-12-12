@@ -1,0 +1,491 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    /* Ajusta el valor según sea necesario */
+    line-height: normal;
+}
+
+.caja-general {
+    background-image: url(/fondo.jpg);
+}
+
+:root {
+    --primary-color: #3fa76a;
+    --secondary-color: #ff9a9a;
+    --hover-color: #fcebeb;
+    --text-color: rgb(255, 255, 255);
+    --link-color:  #00a03d;;
+}
+
+header {
+    background-color: var(--primary-color);
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav {
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li:hover {
+    background-color: #B1F116;
+ 
+  
+    border-radius: 5px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    width: 100%;
+}
+
+nav ul li:hover a {
+    color: var(--link-color);
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li ul li:hover {
+    background-color: var(--hover-color);
+}
+
+nav ul li ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#li_logearse {
+    background-color: rgb(112, 252, 142)   ;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+#li_logearse a {
+    color: var(--link-color);
+}
+
+/* Estilo Formulario Registrar Entrenador */
+
+
+.caja_nav_regs_entrenador {
+    padding: 0;
+}
+
+.caja-compact {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+
+
+#mensaje-registro-entrenador {
+    text-align: center;
+    width: max-content;
+    background-color: rgb(112, 252, 142);
+    color: #000;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin:0 auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    /* Agregado espacio en la parte inferior */
+}
+
+.caja-form-regs-entrenador {
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #a10071;
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    /* Agregado espacio en la parte inferior */
+}
+
+.caja-text {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+div#caja-text-edad {
+    width: 80px;
+}
+
+div.caja-text label#edad,
+input#edad {
+    margin-right: 70%;
+}
+
+div.caja-text input#edad {
+    text-align: center;
+    width: 100%;
+}
+
+div.caja-text input#contrasena_jugador {
+    width: 280PX;
+}
+
+div.caja-text input#cargo {
+    text-align: center;
+}
+
+.btn-registrar {
+    text-align: center;
+}
+
+/* Estilos vista Mi Equipo */
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#info-mi-equipo {
+    padding: 5px;
+    text-align: center;
+    width: max-content;
+    background-color: #b8ecd4;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+/* Estilos Login */
+.opciones-form {
+    background-color: #f0fff8;
+    display: flex;
+    gap: 5px;
+}
+
+.titulo-form {
+    text-align: center;
+    font-size: 18px;
+}
+
+#btnEntrenador {
+    background-color: #ddd;
+    color: #333;
+    width: 50%;
+}
+
+#btnEntrenador:hover {
+    border-bottom: 1.5px solid #004472;
+}
+
+#btnJugador {
+    background-color: #ddd;
+    color: #333;
+    width: 50%;
+}
+
+#btnJugador:hover {
+    border-bottom: 1.5px solid #004472;
+}
+
+.btnEntrenadorSelect {
+    border-bottom: 1.5px solid #004472;
+}
+
+.btnJugadorSelect {
+    border-bottom: 1.5px solid #004472;
+}
+
+/* Estilo Tabla mis Jugadores */
+
+.tabla_misJugadores {
+    width: 80%;
+    text-align: center;
+}
+
+#thead_tabla_misJugadores {
+    background-color: #fff;
+}
+
+.th_tabla_misJugadores {
+    border-bottom: 2px solid #000203;
+}
+
+#tbody_tabla_misJugadores {
+    background-color: #3fa76a;
+  
+}
+
+.caja-lista-jugadores {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #a10071;
+    width: 400px;
+    height: 380px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    overflow-y: scroll;
+}
+
+/* Estilo Lista Entrenadores (Nav_Administrador) */
+.caja-form-lista-entrenador {
+
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #a10071;
+    width: 700px;
+    height: 380px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    overflow-y: scroll;
+}
+
+.tabla_elemento_encabezado {
+    text-align: center;
+}
+
+.elemento_tabla {
+    text-align: center;
+}
+
+.elemento_tabla:hover {
+    background-color: #B1F116;
+}
+
+
+/* Estilos Rol de Paritdos (Nav Administrador) */
+.caja-form-lista-enfrentamientos {
+    background-image: url(/fondo-jornadas.jpg);
+    background-size: cover;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #a10071;
+    width: 900px;
+    height: 450px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    /* overflow-y: scroll; */
+}
+
+.caja_jornada {
+    font-size: 26px;
+    margin-left: 280px;
+}
+
+.partido {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+
+
+
+
+/* Estilo para las cajas de equipo_local y equipo_visitante (cards) */
+.equipo_local,
+.equipo_visitante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f0f0f0;
+    /* Color de fondo de la tarjeta */
+    border: 1px solid #ccc;
+    /* Borde de la tarjeta */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    padding: 10px;
+    /* Espaciado interno */
+    margin: 5px;
+    /* Margen exterior */
+}
+
+/* Estilo para las imágenes de los logos dentro de las tarjetas */
+.equipo_local img,
+.equipo_visitante img {
+    width: 100px;
+    /* Ancho de la imagen */
+    height: auto;
+    /* Altura automática para mantener la proporción */
+}
+
+/* Estilo para el nombre del equipo dentro de las tarjetas */
+.equipo_local_nombre,
+.equipo_visitante_nombre {
+    font-weight: bold;
+    margin-top: 5px;
+    /* Espaciado superior */
+    text-align: center;
+    background-color: #00A430;
+    padding: 5px;
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/* Estilo para la caja de contador (VS) */
+.caja_counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para la fecha del partido */
+.fecha_partido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilo para vista partidos no confirmados (nav administrador) */
+.caja-form-registrar-marcador {
+    background-color: #d0e2f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #a10071;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.caja-form-lista-resultados-partidos {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #a10071;
+    width: 980px;
+    height: 380px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    overflow-y: scroll;
+}
+
+/* Estilos Registros Jugadores (nav-Entrenador) */
+.caja-form-regs-jugador {
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #a10071;
+    width: 360px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#caja_compact_psw_cargo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#nombre_equipo {
+    text-align: center;
+}
+
+#caja-text-input input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #3fa76a;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .1s ease-in-out;
+}
+
+#mensaje-sin-jugadores {
+    font-size: 32px;
+    font-weight: lighter;
+    color: #a10071;
+}
+
+#boton-general {
+    width: max-content;
+    max-width: 250px;
+    background-color: #a10071;
+    margin-left: 5px;
+}
+#boton-general:disabled{
+    
+    background-color: #f882d5;
+}
+.caja-gif{
+    background-image: url(/balon.gif);
+  margin-left: 400px;
+    width: 900px;
+    height: 600px;
+    background-size: cover;
+
+}
+
+#caja-contador{
+    color:#fff;
+    background-color: #a10071;
+    width: max-content;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+    font-weight: bold;
+}
